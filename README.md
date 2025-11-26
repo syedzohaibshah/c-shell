@@ -1,3 +1,5 @@
+
+**This shell in C is written by following Stephen Brennan’s tutorial, with a few additional functionalities such as managing and listing background processes and handling output redirection.**
 ## How Shell Works 
 
  This is a small program that lets you run other programs and a few basic commands from your terminal. Here's a simple overview of its operation:
@@ -5,7 +7,7 @@
 1.  **Reads and Parses Commands:** LSH waits for your input, then breaks it down into the command name and any arguments.
 
 2.  **Decides Execution Method:**
-    * **Built-in Commands:** For commands like `cd`, `help`, or `exit`, LSH executes them directly within itself. These commands are vital for changing the shell's own state (e.g., its current directory).
+    * **Built-in Commands:** For commands like `cd`, `help`,`lsps`, or `exit`, LSH executes them directly within itself. These commands are vital for changing the shell's own state (e.g., its current directory).
     * **External Programs:** For other commands (like `ls` or `grep`), LSH launches them as separate "external programs."
 
 ### How LSH Runs External Programs
